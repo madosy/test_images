@@ -1,0 +1,158 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.contentBox {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    border: 0;
+    position: relative;
+    border: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /*font here*/
+    margin: auto;
+}
+
+.contentBox h1{
+    background: none;
+    border-radius: 5px;
+    border: 0;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.contentBox h2 {
+    display: inline-block;
+    background: none;
+    border: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #354259;
+}
+
+/*header contents*/
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-img {
+    align-items: center;
+    max-width: 150px;
+    min-width: 150px;
+}
+
+#header {
+    margin-top: 50px;
+}
+
+/*seamless header and content boxes*/
+#header,
+#sessionKeyBox{
+    padding-bottom: 10px;
+    margin-bottom: -10px; 
+}
+
+#header .pageTitle {
+    font-size: 30px;
+    font-weight: bold;
+    color: #354259;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.lang-selection {
+    display: flex;
+    justify-content: center;
+}
+
+/*lang selection dropdown*/
+select {
+	background-color: white;
+	border: 1px solid #c1cbd5;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+/*Submit button*/
+#access_key_pretty {
+    display: block;
+    margin: 10px auto;
+    box-sizing: border-box;
+    width: 320px;
+    height: 60px;
+    padding: 0 15px;
+    border: 2px solid #E6EBF1;
+    border-radius: 5px;
+    color: #536D87;
+    font-weight: bold;
+    font-size: 2.5em;
+    background-color: white;
+}
+
+#access_key_submit {
+    box-sizing: border-box;
+    height: 60px;
+    width: 320px;
+    font-size: 20px;
+    background-color: #c1cbd5;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+#access_key_submit:valid,
+#access_key_submit:valid:hover {
+    background-color: #ff5f30;
+    transition: 0.3s ;
+}
+
+#session_key_loading_gif {
+    display: block;
+    margin: 10px auto;
+}
+
+/*Collapsible Button*/
+.show-me-more{
+    margin: 20px auto 0;
+}
+.collapsible-title {
+    font-size: 14px;
+}
+
+#collapsible_button {
+    display: inline-block;
+    height:16px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    border: 0;
+    cursor: pointer;
+    background: url('dexis_angle-down.svg') no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+#collapsible_button.showLess {
+    background: url('dexis_angle-up.svg') no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-size: 12px;
+}
+
+/*Collapsible Content*/
+table { 
+    border: 0;
+    font-size: inherit;
+    text-align: center;}
+table p { margin: 0;}
+tr:nth-child(even) {background-color: #cccccc;}
+td {padding: 10px 0; }
+.content h3 {margin-bottom: 0;}
